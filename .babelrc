@@ -1,0 +1,41 @@
+{
+  "presets": [
+    // "es2015-rollup",
+    // "stage-2",
+    // "es2015",
+    // "react"
+  ],
+
+  "plugins": [
+    // Is required
+    "transform-es2015-destructuring",
+    "transform-es2015-modules-commonjs",
+    "transform-es2015-parameters",
+
+    // It's Work, But not completely implementation
+    "transform-es2015-for-of",
+    "transform-es2015-shorthand-properties",
+
+    // It's Work!, But already implemented of Chrome 48
+    "transform-es2015-object-super",
+
+    // Require if using electron version 0.35.x
+    // "transform-es2015-block-scoping",
+    // "transform-es2015-classes",
+    // "transform-es2015-spread",
+
+    // Not Working
+    // "transform-es2015-sticky-regex",
+    // "transform-es2015-typeof-symbol",
+    // "transform-es2015-unicode-regex",
+
+    /* Misc */
+    // "transform-remove-console",
+
+    /* React */
+    // "transform-react-jsx",
+
+    /* Stage-2 */
+    "transform-object-rest-spread"
+  ]
+}

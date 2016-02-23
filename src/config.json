@@ -1,0 +1,39 @@
+{
+  "name": "psyclone-studio-app",
+  "version": "2.0.2",
+  "description": "",
+  "_version_component_format": "5",
+  "_version_design_format": "7",
+  "main": ".static.js",
+  "scripts": {
+    "test": "echo `Error: no test specified` && exit 1",
+    "watch": "watchify main.js -t babelify -o ./static.js -v -d",
+    "fetch-themes": "babel-node scripts/fetch-themes.js",
+    "fetch-font-awesome": "babel-node scripts/fetch-font-awesome.js",
+    "build": "browserify main.js -t babelify | uglifyjs > ./static.js"
+  },
+  "private": "true",
+  "dependencies": {
+    "clone": "^1.0.2",
+    "codemirror": "^5.10.0",
+    "color-name": "^1.0.1",
+    "css": "^2.2.1",
+    "deep-equal": "^1.0.0",
+    "escape-html": "^1.0.1",
+    "fuzzaldrin": "^2.1.0",
+    "js-beautify": "^1.5.10",
+    "onecolor": "^2.5.0",
+    "specificity": "^0.1.4",
+    "uglify-js": "^2.4.24",
+    "valid-filename": "^1.1.0",
+    "valid-media-queries": "0.0.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.3",
+    "babelify": "^6.0.2",
+    "browserify": "^8.1.3",
+    "watchify": "^2.3.0"
+  },
+  "author": "Zine EOOD <hi@zine.bg>",
+  "license": "Proprietary"
+}
